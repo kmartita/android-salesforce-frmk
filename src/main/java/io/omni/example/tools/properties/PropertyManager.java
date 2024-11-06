@@ -7,9 +7,9 @@ import static io.omni.example.tools.properties.PropertyFileHelper.readFromProper
 
 public class PropertyManager {
 
-    public static final String CREDS_FILE_FOR_OMNI= "creds_for_omni.properties";
-    public static final String CREDS_FILE_FOR_REGRESSION= "creds_for_regression.properties";
-    public static final String CREDS_FILE_FOR_REGRESSION1 = "creds_for_regression1.properties";
+    public static final String LOCAL = "local.properties";
+    public static final String REGRESSION = "regression.properties";
+    public static final String REGRESSION1 = "regression1.properties";
 
     public static SfUserModel getAdminUser() {
         return new SfUserModel(readFromPropertyFile(getEnvFile(), "lviv_adminusername"),

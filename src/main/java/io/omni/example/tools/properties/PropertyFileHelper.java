@@ -36,12 +36,12 @@ public class PropertyFileHelper {
     public static String getEnvFile() {
         switch (System.getProperty("env")) {
             case "regression":
-                return CREDS_FILE_FOR_REGRESSION;
+                return REGRESSION;
             case "regression1":
-                return CREDS_FILE_FOR_REGRESSION1;
+                return REGRESSION1;
             case "omni":
             default:
-                return CREDS_FILE_FOR_OMNI;
+                return LOCAL;
         }
     }
 }
