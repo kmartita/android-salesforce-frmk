@@ -39,7 +39,7 @@ public class PropertyFileHelper {
                 return REGRESSION;
             case "regression1":
                 return REGRESSION1;
-            case "omni":
+            case "local":
             default:
                 return LOCAL;
         }
