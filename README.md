@@ -70,7 +70,7 @@ Before executing the mobile test, it is necessary to ensure that the required co
 
     $ -ea -Denv=local -Ddevice=SamGalTabS8
 *Parameters:*<br/>
-`-Denv={String}` - environment for execution test
+`-Denv={String}` - environment for execution test<br/>
 `-Ddevice={String}` - name of Device on which should be executed test
 
 **NOTE:** The Android SDK should be installed. It includes Android device emulators, which are virtual devices that run on your machine. The following command is used to start the emulator and executed in a separate process automatically through Java code:<br/>
