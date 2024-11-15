@@ -76,7 +76,6 @@
       <artifactId>java-dotenv</artifactId>
       <version>5.2.2</version>
     </dependency>
-
     <dependency>
       <groupId>sample</groupId>
       <artifactId>com.sample</artifactId>
@@ -103,6 +102,12 @@
       <groupId>com.force.api</groupId>
       <artifactId>force-wsc</artifactId>
       <version>57.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zeroturnaround</groupId>
+      <artifactId>zt-zip</artifactId>
+      <version>1.16</version>
+      <type>jar</type>
     </dependency>
   </dependencies>
 

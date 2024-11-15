@@ -26,10 +26,6 @@ import static java.lang.String.format;
 @Listeners({TestListener.class})
 public class TestBase {
 
-    protected final static SfUserModel ADMIN = getAdminUser();
-    protected final static SfUserModel SALES_REP = getSalesRepUser();
-    protected final static String SALES_REP_TERRITORY = getFirstTerritoryForSalesRep();
-
     protected final static SfUserModel FIRST_SALES_REP = getFirstSalesRepUser();
     protected final static String FIRST_SALES_REP_TERRITORY = getTerritoryForFirstSalesRep();
 
