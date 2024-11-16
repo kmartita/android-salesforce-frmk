@@ -1,4 +1,4 @@
-# Android Test Automation Project
+# Android Test Automation Project (based on SalesForce)
 
 This is the test automation project. It supports testing of:
 * REST API
@@ -8,7 +8,9 @@ This is the test automation project. It supports testing of:
 * (Mac) OS X
 
 ### Supported CRM System
-* **Salesforce** (used a Metadata API for Salesforce to provide access to some entities and feature settings that can be configured through the user interface)
+* **Salesforce**:<br/>
+  * used the *com.sforce.soap.metadata* package to interact with the metadata API (package *io.omni.example.tools.metadata*). This includes initializing the connection to Salesforce, creating requests, processing responses, and programmatically managing various metadata components.
+  * used the Metadata API to deploy and retrieve metadata via ZIP files (class *DeploymentUtils.java*) to improve development workflows and maintain a robust Salesforce environment.
 
 ### Supported Android Devices
 * Samsung Galaxy Tab S8
