@@ -6,6 +6,7 @@ import io.omni.example.tools.PathToFile;
 import io.qameta.allure.Step;
 import org.zeroturnaround.zip.ZipUtil;
 import java.io.*;
+import java.nio.file.FileSystems;
 
 public class DeploymentUtils {
 
@@ -60,8 +61,7 @@ public class DeploymentUtils {
     }
 
     public static void main(String[] args) {
-        String path_to_meeting_folder = PathToFile.getPathToResourcesFolder() + "meetings" + File.separator;
-        String pathName = path_to_meeting_folder + "meeting_cloned_flexi_page";
+        String pathName = String.join(FileSystems.getDefault().getSeparator(), PathToFile.getPathToTestResourcesFolder(), "meetings", "meeting_cloned_flexi_page");
         zipAndDeployFile(pathName);
     }
 }

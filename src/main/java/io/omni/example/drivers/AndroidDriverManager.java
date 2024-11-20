@@ -8,15 +8,22 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.nio.file.FileSystems;
+
+import static io.omni.example.tools.properties.EnvManager.ANDROID_URL;
+import static io.omni.example.tools.properties.EnvManager.APP_NAME;
 
 public class AndroidDriverManager {
 
     public AndroidDriver setupAndroid(Devices device) {
         AndroidDriver driver;
-        String testAppPath = System.getProperty("user.dir") + "/src/test/resources/app-debug.apk";
+        String userDir = System.getProperty("user.dir");
+        String testAppPath = String.join(FileSystems.getDefault().getSeparator(),
+                userDir, "app", APP_NAME);
+
         DesiredCapabilities desiredCaps = getDesiredCapabilities(device, testAppPath);
         try {
-            driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desiredCaps);
+            driver = new AndroidDriver(new URL(ANDROID_URL), desiredCaps);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             driver.context("NATIVE_APP");
 

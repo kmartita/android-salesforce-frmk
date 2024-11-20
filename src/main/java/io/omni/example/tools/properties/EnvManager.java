@@ -11,6 +11,9 @@ public class EnvManager {
     public static final String CLIENT_SECRET = getEnvOption("CLIENT_SECRET");
     public static final String REDIRECTED_URL = getEnvOption("REDIRECTED_URL");
     public static final String CONTENT_API_URL = getEnvOption("CONTENT_API_URL");
+    public static final String APP_BUNDLE_ID = getEnvOption("APP_BUNDLE_ID");
+    public static final String APP_NAME = getEnvOption("APP_NAME");
+    public static final String ANDROID_URL = getEnvOption("ANDROID_URL");
 
     private EnvManager() {
 

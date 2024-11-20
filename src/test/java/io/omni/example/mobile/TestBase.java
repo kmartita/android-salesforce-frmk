@@ -20,6 +20,7 @@ import org.testng.asserts.SoftAssert;
 
 import static io.omni.example.drivers.Devices.SAMSUNG_GALAXY_TAB_S8;
 import static io.omni.example.helpers.SessionManager.getSession;
+import static io.omni.example.tools.properties.EnvManager.APP_BUNDLE_ID;
 import static io.omni.example.tools.properties.PropertyManager.*;
 import static java.lang.String.format;
 
@@ -41,7 +42,7 @@ public class TestBase {
 
     @BeforeClass(alwaysRun = true)
     public void init() {
-        ((AndroidDriver) DriverManager.getDriver()).activateApp("com.iqvia.omni_oce");
+        ((AndroidDriver) DriverManager.getDriver()).activateApp(APP_BUNDLE_ID);
         ExpectedConditionTool.initWait();
     }
 
@@ -52,7 +53,7 @@ public class TestBase {
 
     @AfterClass(alwaysRun = true)
     public void tearDown() {
-        ((AndroidDriver) DriverManager.getDriver()).terminateApp("com.iqvia.omni_oce");
+        ((AndroidDriver) DriverManager.getDriver()).terminateApp(APP_BUNDLE_ID);
         DriverManager.resetDriver();
     }
 

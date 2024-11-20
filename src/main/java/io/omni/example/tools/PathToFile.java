@@ -1,20 +1,11 @@
 package io.omni.example.tools;
 
-import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Objects;
+import java.nio.file.FileSystems;
 
 public class PathToFile {
 
-    private static final String SEPARATOR = File.separator;
-
-    public static String getRootOfProject() {
-        Path path = Paths.get(Objects.requireNonNull(PathToFile.class.getClassLoader().getResource(".")).getPath());
-        return path.getParent().getParent().toString();
-    }
-
-    public static String getPathToResourcesFolder() {
-        return getRootOfProject() + SEPARATOR + "src" + SEPARATOR + "test" + SEPARATOR + "resources" + SEPARATOR;
+    public static String getPathToTestResourcesFolder() {
+        return String.join(FileSystems.getDefault().getSeparator(),
+                System.getProperty("user.dir"), "src", "test", "resources");
     }
 }
