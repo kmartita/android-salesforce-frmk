@@ -1,7 +1,6 @@
 # Android Test Automation Project (based on Salesforce)
 
 This is the test automation project. It supports testing of:
-* REST API
 * Android Mobile UI
 
 ### Supported Platforms
@@ -34,7 +33,7 @@ This is the test automation project. It supports testing of:
 And ensure you have **Maven** and **Java 17** installed.<br/>
 
 ## 2. Project Overview
-This platform improved sales tracking and streamlined collaboration with healthcare providers, leveraging Salesforce with custom features and an Android app for sales representatives.<br/>
+This platform improved sales tracking and streamlined collaboration with healthcare providers, leveraging Salesforce with custom features for sales representatives.<br/>
 
 ## 3. Project Structure
 The Maven project has a pom.xml file and a directory structure based on defined conventions:<br/>
@@ -79,7 +78,7 @@ APP_NAME=android.apk
 APP_BUNDLE_ID=com.example.myapp
 ```
 ### 4.1. IntelliJ IDEA UI
-Before executing the mobile test, it is necessary to ensure that the required configurations are installed for this test and the metadata is generated. To execute the mobile tests please use the following **VM command** in run/debug configurations from IntelliJ IDEA:<br/>
+Before executing the mobile test, it is necessary to ensure that the required configurations are installed for this test and the metadata is generated. To execute the mobile tests please use the following **VM command** in run/debug configurations from IntelliJ IDEA:<br/>
 
     $ -ea -Denv=local -Ddevice=SamGalTabS8
 *Parameters:*<br/>
