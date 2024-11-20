@@ -1,4 +1,4 @@
-# Android Test Automation Project (based on SalesForce)
+# Android Test Automation Project (based on Salesforce)
 
 This is the test automation project. It supports testing of:
 * REST API
