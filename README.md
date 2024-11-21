@@ -8,7 +8,7 @@ This is the test automation project. It supports testing of:
 
 ### Supported CRM System
 * **Salesforce**:<br/>
-  * utilized the `com.sforce.soap.metadata` package to interact with the Metadata API. Utils classes (package `io.omni.example.tools.metadata`) include initializing the connection to Salesforce, creating requests, processing responses, and programmatically managing various metadata components.<br/>
+  * utilized the `com.sforce.soap.metadata` package to interact with the Metadata API. Utils classes (package `io.example.tools.metadata`) include initializing the connection to Salesforce, creating requests, processing responses, and programmatically managing various metadata components.<br/>
   * used the Metadata API to deploy and retrieve metadata via ZIP files (class `DeploymentUtils.java`) to improve development workflows and maintain a robust Salesforce environment.<br/>
 
 ### Supported Android Devices
